@@ -1,0 +1,95 @@
+.AverageBox > .titleBox h2:last-of-type {
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 0px 9px 0px 0px;
+    
+}
+.AverageBox > .titleBox > h2 {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    margin: 0;
+    height: 8vh;
+    cursor: pointer;
+}
+.AverageBox > .titleBox h2:first-of-type > a {
+    color: var(--blue);
+    text-decoration: none;
+}
+.AverageBox > .titleBox h2:first-of-type {
+    background: #272727;
+    border-radius: 9px 0px 0px 0px;
+    
+}
+.AverageBox > .titleBox > h2 >.fa-coins {
+    margin-right: .5rem;
+}
+
+h3 {
+    color: white;
+    font-weight: 600;
+}
+
+.costInputBox {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 1rem;
+}
+.costInput {
+    background: #272727;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    width: 20vw;
+    height: 5vh;
+    color: white;
+    margin: 0.5rem 0.25rem;
+}
+.costBtn {
+    background: #fff;;
+    border-radius: 9px;
+}
+.moreBtn {
+    padding: 0.25rem 1rem;
+}
+.showRateBox {
+    background: #272727;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    width: 20vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .costInput {
+        width: 16vw;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .AverageBox > .titleBox > h2 {
+        width: 60vw;
+    }
+    .costInput {
+        width: 28vw;
+    }
+    .showRateBox {
+        width: 28vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .costInput {
+        width: 25vw;
+    }
+    .showRateBox {
+        width: 45vw;
+    }
+}

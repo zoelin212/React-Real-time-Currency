@@ -1,0 +1,159 @@
+.changeBox {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 1rem 2rem;
+    border-radius: 0px 0px 9px 9px;
+}
+.changeBox,
+.titleBox {
+    width: 50vw;
+    margin: 0 auto;
+    height: auto;
+    max-width: 1000px;
+    min-width: 300px;
+}
+.ConverterBox > .titleBox > h2 >.fa-rotate {
+    margin-right: .5rem;
+}
+.titleBox {
+    display: flex;
+    justify-content: space-between;
+}
+.ConverterBox > .titleBox h2:first-of-type {
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 9px 0px 0px 0px;
+    
+}
+.ConverterBox > .titleBox > h2 {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    margin: 0;
+    height: 8vh;
+    cursor: pointer;
+}
+.ConverterBox > .titleBox h2:last-of-type > a {
+    color: var(--blue);
+    text-decoration: none;
+}
+.ConverterBox > .titleBox h2:last-of-type {
+    background: #272727;
+    border-radius: 0px 9px 0px 0px;
+    
+}
+.selectGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #272727;
+    border-radius: 9px;
+    filter: drop-shadow(0px 12px 17px rgba(0, 0, 0, 0.25));
+    margin: 2rem auto;
+    height: 8vh;
+    padding: 1rem 2rem;
+    position: relative;
+}
+.selected-option {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    gap: 1rem;
+    cursor: pointer;
+}
+.selected-option > img {
+    width: 3vw;
+    height: auto;
+}
+li > img {
+    margin-right: 0.5rem;
+    width: 2vw;
+    height: auto;
+}
+.listBox {
+    overflow: scroll;
+    height: 70px;
+    position: absolute;
+    z-index: 3;
+    left: 100px;
+    top: 0;
+}
+ul {
+    list-style: none;
+    margin-top: 0;
+}
+ul li {
+    color: white;
+    font-weight: 600;
+    gap: 1rem;
+}
+.money {
+    width: 10vw;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: end;
+}
+
+@media (max-width: 850px) {
+    .changeBox, 
+    .titleBox,
+    .logoBox > img {
+        width: 80vw;
+    }
+    .ConverterBox > .titleBox > h2 {
+        width: 60vw;
+    }
+    .money {
+        width: 18vw;
+    }
+    .selected-option > img {
+        width: 5vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .titleBox > h2 {
+        font-size: 1.1rem;
+    }
+    li > img {
+        width: 3vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .selectGroup {
+        padding: 0.5rem 1rem;
+    }
+    ul {
+        padding-left: 0;
+    }
+    .listBox {
+        left: 90px;
+    }
+}
+
+@media (max-width: 420px) {
+    .selected-option {
+        gap: .5rem;
+    }
+    .changeBox {
+        padding: 1rem 1rem;
+    }
+    .listBox {
+        left: 201px;
+        top: 4px;
+    }
+    .selectGroup {
+        flex-direction: column;
+        gap: .5rem;
+        height: 9vh;
+    }
+    .money {
+        width: 31vw;
+        text-align: center;
+    }
+}

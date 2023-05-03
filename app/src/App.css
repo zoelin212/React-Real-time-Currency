@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  height: 100vh;
+}
+.logoBox > img {
+  width: 50vw;
+  height: auto;
+}
+footer> p {
+  color: white;
+  padding-bottom: 1rem;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+footer {
+  margin: 1rem;
+}
+
+footer > p > a  {
+  text-decoration: none;
+  font-weight: 600;
+  color: darkblue;
+}
+
